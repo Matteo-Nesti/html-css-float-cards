@@ -1,0 +1,87 @@
+
+/* custom properties*/
+
+:root{
+    --title-color: #e53170;
+    --mail-color: #66c7d6;
+    --card-text-color: #fff;
+}
+
+/* css reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* generics */
+
+body {
+    font-family: 'Fredoka', sans-serif;
+    background-color: rgb(14, 14, 14);
+}
+
+header {
+    height: 150px;    
+}
+
+h1 {
+    text-align: center;
+    line-height: 150px;
+    font-size: 2.5rem;
+    color: var(--title-color);
+}
+
+section > p{
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 10rem auto;
+    background-color: var(--card-text-color);
+    padding: 0 3rem 3rem 3rem;
+    border-radius: 10px;
+}
+
+/* utility */
+
+.float-left {
+    float: left;
+}
+
+
+/*clearfix*/
+
+.clear-fix::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+
+/* card */ 
+
+.card {
+    background-color: #000;
+    color: var(--card-text-color);
+    width: calc(100% / 3 - 1.6rem); 
+    margin: 1rem 0.8rem;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card img{
+    height: 100px; 
+}
+
+.personal-details {
+    margin: 19px;
+}
+
+.personal-details a {
+    text-decoration: none;
+    color: var(--mail-color);
+}
